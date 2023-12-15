@@ -1,0 +1,56 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "../assets/css/main.css";
+import { Image } from "astro:assets";
+
+//Assets
+import img1 from "../assets/img/img1.png";
+
+// const testdata = "Hello World";
+// const { testdata } = Astro.props;
+---
+
+<Layout title="Appniche techologies">
+	<Header />
+	<main class="flex justify-center gap-4 w-full h-[85dvh] px-2">
+		<div class="cnt flex flex-col justify-center items-start gap-6 px-8">
+			<p class="text-7xl font-bold">Crafting digital brilliance</p>
+			<p class="text-2xl">
+				We build stunning websites, dynamic web apps, and powerful
+				applications and more...
+			</p>
+
+			<div class="buttons flex gap-8">
+				<button
+					class="w-[150px] bg-blue-500 text-black text-2xl font-semibold p-2 rounded-md vibrate-1"
+					><a href="/contact">Contact us</a></button
+				>
+				<button
+					class="w-[150px] border-2 border-blue-500 text-2xl p-2 rounded-md hover:font-extrabold"
+					>more</button
+				>
+			</div>
+		</div>
+
+		<div class="cnt cnt2 h-full flex justify-center items-center">
+			<Image
+				class="spin_img w-[350px] rounded-full"
+				src={img1}
+				alt="Logo"
+			/>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	.cnt {
+		width: 50%;
+		height: auto;
+		/* background-color: blue; */
+	}
+	.spin_img {
+		-webkit-animation: spin 20s linear infinite;
+		animation: spin 20s linear infinite;
+	}
+</style>

@@ -1,0 +1,30 @@
+## for company Appniche
+<span class=comment>/* List */</span>
+
+82d1d8, 070c0c, 263d3f, 456e72, 63a0a5
+#82d1d8, #070c0c, #263d3f, #456e72, #63a0a5
+
+<span class=comment>/* Comma Seperated */</span>
+
+82d1d8,070c0c,263d3f,456e72,63a0a5
+#82d1d8,#070c0c,#263d3f,#456e72,#63a0a5
+
+<span class=comment>/* Array */</span>
+
+["82d1d8","070c0c","263d3f","456e72","63a0a5"]
+["#82d1d8","#070c0c","#263d3f","#456e72","#63a0a5"]
+
+
+## for my portfolio
+
+<span class=comment>/* List */</span>
+bc9eed, 1a1621, 433854, 6b5a87, 947cba
+#bc9eed, #1a1621, #433854, #6b5a87, #947cba
+
+<span class=comment>/* Comma Seperated */</span>
+bc9eed,1a1621,433854,6b5a87,947cba
+#bc9eed,#1a1621,#433854,#6b5a87,#947cba
+
+<span class=comment>/* Array */</span>
+["bc9eed","1a1621","433854","6b5a87","947cba"]
+["#bc9eed","#1a1621","#433854","#6b5a87","#947cba"]
