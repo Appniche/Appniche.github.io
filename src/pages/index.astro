@@ -3,54 +3,86 @@ import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import "../assets/css/main.css";
 import { Image } from "astro:assets";
+import { Icon } from "astro-icon";
 
 //Assets
 import img1 from "../assets/img/img1.png";
-
-// const testdata = "Hello World";
-// const { testdata } = Astro.props;
 ---
 
 <Layout title="Appniche techologies">
+	<!-- header for all the pages -->
 	<Header />
-	<main class="flex justify-center gap-4 w-full h-[85dvh] px-2">
-		<div class="cnt flex flex-col justify-center items-start gap-6 px-8">
-			<p class="text-7xl font-bold">Crafting digital brilliance</p>
-			<p class="text-2xl">
-				We build stunning websites, dynamic web apps, and powerful
-				applications and more...
-			</p>
 
-			<div class="buttons flex gap-8">
-				<button
-					class="w-[150px] bg-blue-500 text-black text-2xl font-semibold p-2 rounded-md vibrate-1"
-					><a href="/contact">Contact us</a></button
-				>
-				<button
-					class="w-[150px] border-2 border-blue-500 text-2xl p-2 rounded-md hover:font-extrabold"
-					>more</button
-				>
+	<!-- main with all the extra layout -->
+	<main>
+		<!-- part one of the main section -->
+		<div class="flex justify-center gap-4 w-full h-[85dvh] px-2">
+			<div
+				class="cnt flex flex-col justify-center items-center gap-6 px-8 w-[85%]"
+			>
+				<p class="text-8xl font-bold text-center">
+					Crafting <span class="h_word">digital</span> brilliance
+				</p>
+				<p class="text-2xl w-[70%] text-center">
+					We build stunning websites, dynamic web apps, and powerful
+					applications and more...
+				</p>
+
+				<div class="buttons flex gap-8">
+					<button
+						class="w-[150px] bg-blue-500 text-black text-2xl font-semibold p-2 rounded-md vibrate-1"
+						><a href="/contact">Contact us</a></button
+					>
+					<button
+						class="btn1 w-[150px] border-2 border-blue-500 text-2xl p-2 rounded-md hover:font-extrabold"
+						>more</button
+					>
+				</div>
 			</div>
 		</div>
-
 		<div class="cnt cnt2 h-full flex justify-center items-center">
 			<Image
-				class="spin_img w-[350px] rounded-full"
+				class="spin_img w-[450px] rounded-full"
 				src={img1}
 				alt="Logo"
 			/>
+
+			<Icon class="icons" name="logos:html-5" />
+			<Icon class="icons" name="logos:css-3" />
+			<Icon class="icons" name="vscode-icons:file-type-js-official" />
+			<Icon class="icons" name="logos:nodejs" />
+			<Icon class="icons" name="logos:python" />
 		</div>
+
+		<!-- part two of the main section -->
+		<div class="w-full h-screen"></div>
 	</main>
 </Layout>
 
 <style>
 	.cnt {
-		width: 50%;
+		/* width: 50%; */
 		height: auto;
 		/* background-color: blue; */
 	}
 	.spin_img {
-		-webkit-animation: spin 20s linear infinite;
-		animation: spin 20s linear infinite;
+		/* -webkit-animation: spin 20s linear infinite; */
+		/* animation: spin 20s linear infinite; */
+	}
+	.buttons > .btn1:hover {
+		font-size: 28px;
+	}
+	.icons {
+		position: absolute;
+		width: 90px;
+	}
+	.h_word {
+		display: inline-block;
+		/* text-decoration: underline; */
+		background: #3b82f6;
+		padding: 10px;
+		border-radius: 8px;
+		box-shadow: blue 10px 10px;
+		margin-bottom: 15px;
 	}
 </style>
