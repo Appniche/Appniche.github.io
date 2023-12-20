@@ -6,7 +6,10 @@ import { Image } from "astro:assets";
 import { Icon } from "astro-icon";
 
 //Assets
-import img1 from "../assets/img/img1.png";
+// import img1 from "../assets/img/img1.png";
+import img_1 from "../assets/img/img-watches.png";
+import img_2 from "../assets/img/img-cosmetics.png";
+import img_3 from "../assets/img/img-gym.png";
 ---
 
 <Layout title="Appniche techologies">
@@ -21,10 +24,6 @@ import img1 from "../assets/img/img1.png";
 			class="md:bottom-10 bottom-[-8%] md:left-14 left-[-18%]"
 			name="logos:css-3"
 		/>
-		<!-- <Icon -->
-		<!-- 	class="right-0 top-20" -->
-		<!-- 	name="vscode-icons:file-type-js-official" -->
-		<!-- /> -->
 		<Icon
 			class="md:right-[20%] right-[-12%] top-[80%]"
 			name="logos:nodejs"
@@ -44,7 +43,9 @@ import img1 from "../assets/img/img1.png";
 					Crafting <span class="h_word my-4 md:my-0">digital</span>
 					 brilliance
 				</p>
-				<p class="text-xl md:w-[70%] w-full text-center px-4">
+				<p
+					class="md:text-2xl text-xl md:w-[70%] w-full text-center px-4"
+				>
 					<span class="text-3xl">&lt;&gt;</span> We build stunning
 					websites, dynamic web apps, and powerful applications and
 					more...<span class="text-3xl">&lt;&#47;&gt;</span>
@@ -57,45 +58,65 @@ import img1 from "../assets/img/img1.png";
 					>
 					<button
 						class="btn1 md:w-[150px] w-[120px] border-2 border-blue-500 text-xl md:text-2xl p-2 rounded-md hover:font-extrabold"
-						><a href="#what">more</a></button
+						><a href="#what-we-do">more</a></button
 					>
 				</div>
 			</div>
 		</div>
 
 		<!-- part two of the main section -->
-		<div class="w-full h-screen" id="what">
+		<div
+			class="w-full h-screen text-xl flex flex-col items-center gap-[50px] my-8"
+			id="what-we-do"
+		>
 			<!-- what we do part -->
-			<div class=""></div>
+			<div class="flex flex-col items-center gap-8 mt-8 px-4 md:px-0">
+				<span class="text-4xl">So, what we do!</span>
+				<div>
+					<p class="text-center">
+						We don't just build anything, we forge you'r <i
+							class="text-blue-500">Dream's</i
+						> into <i class="text-blue-500">Reality</i> here.
+					</p>
+				</div>
+				<div
+					class="h-[60%] flex flex-wrap justify-center items-center gap-14 mt-8"
+				>
+					<a id="a" href="https://shashanksangawar.github.io/Watches">
+						<Image
+							src={img_1}
+							alt="scroll-image"
+							style="height: 300px;"
+						/>
+						<!-- <span class="span mx-auto" id="sp_word">Watches</span> -->
+					</a>
+					<a id="a" href="https://sahaskamble.github.io/Cosmetics">
+						<Image
+							src={img_2}
+							alt="scroll-image"
+							style="height: 300px;"
+						/>
+						<!-- <span class="span mx-auto" id="sp_word">Cosmetics</span> -->
+					</a>
+					<a
+						id="a"
+						href="https://shashanksangawar.github.io/Gym-Nation"
+					>
+						<Image
+							src={img_3}
+							alt="scroll-image"
+							style="height: 300px;"
+						/>
+						<!-- <span class="span mx-auto" id="sp_word">Gym</span> -->
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="w-full h-screen text-xl flex flex-col justify-center items-center"
+		>
+			<div class="grid grid-flow-col place-items-center gap-[2rem]"></div>
 		</div>
 	</main>
 </Layout>
-
-<style>
-	.cnt {
-		/* width: 50%; */
-		height: auto;
-		/* background-color: blue; */
-	}
-	.spin_img {
-		/* -webkit-animation: spin 20s linear infinite; */
-		/* animation: spin 20s linear infinite; */
-	}
-	.buttons > .btn1:hover {
-		font-size: 28px;
-	}
-	[astro-icon] {
-		position: absolute;
-		z-index: -10;
-		width: 90px;
-	}
-	.h_word {
-		display: inline-block;
-		/* text-decoration: underline; */
-		background: #3b82f6;
-		padding: 10px;
-		border-radius: 8px;
-		box-shadow: blue 10px 10px;
-		margin-bottom: 15px;
-	}
-</style>

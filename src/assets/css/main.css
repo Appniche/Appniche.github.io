@@ -1,3 +1,63 @@
+.cnt {
+	/* width: 50%; */
+	height: auto;
+	/* background-color: blue; */
+}
+.buttons > .btn1:hover {
+	font-size: 28px;
+}
+[astro-icon] {
+	position: absolute;
+	z-index: -10;
+	width: 90px;
+}
+.icons {
+	position: relative;
+}
+img {
+	border-radius: 10px;
+}
+#a {
+	--s: 300px;
+	--b: 2px;
+	--c: 14px;
+	--g: #3b82f6;
+	width: var(--s);
+	aspect-ratio: 1;
+	outline: calc(var(--s) / 2) solid #00000000;
+	outline-offset: calc(var(--s) / -2);
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 10px;
+}
+#a:hover {
+	outline: var(--b) solid var(--g);
+	outline-offset: var(--c);
+}
+/* .span { */
+/* 	display: none; */
+/* 	text-align: center; */
+/* 	margin-top: 10px; */
+/* 	padding: 10px; */
+/* 	font-size: 30px; */
+/* 	width: 200px; */
+/* } */
+/* img:hover + .span { */
+/* 	display: flex; */
+/* 	justify-content: center; */
+/* 	align-items: center; */
+/* 	background-color: #2965f1; */
+/* 	border-radius: 50px; */
+/* } */
+.h_word {
+	display: inline-block;
+	background: #3b82f6;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: blue 10px 10px;
+	margin-bottom: 15px;
+}
+
 
 .cnt2 {
 	/* background: radial-gradient( */
