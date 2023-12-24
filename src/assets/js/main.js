@@ -3,14 +3,12 @@ window.onload = (e) => {
 };
 
 let btn = document.querySelector("#btn");
-let menu = document.querySelector("#nav_menu");
-let close_btn = document.querySelector("#cls_btn");
+let menu = document.getElementById("nav_menu");
+
 
 btn.addEventListener("click", () => {
-  menu.classList.remove("hidden");
+  menu.classList.toggle("hidden");
+  // btn.style.border = "1px solid #fff"
 });
 
-close_btn.addEventListener("click", () => {
-  menu.classList.add("hidden");
-});
 // console.log("Hello world");
