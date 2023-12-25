@@ -2,18 +2,63 @@
 
 ---
 
-<footer
-	class="h-[200px] mt-12 flex items-center justify-around flex-wrap border-t border-white"
->
-	<span class="text-3xl flex gap-6 items-center">
-		<i class="fa-brands fa-instagram"></i>
-		<i class="fa-brands fa-github"></i>
-		<i class="fa-brands fa-youtube"></i>
-	</span>
+<footer class="h-auto mt-12 flex flex-col border-t border-white">
+	<div
+		class="w-full flex md:justify-around md:flex-row flex-col items-center"
+	>
+		<div class="w-full flex justify-center items-start gap-8 flex-col p-6">
+			<p class="w-full md:w-[250px]">
+				Consectetur porro eos nisi nesciunt accusamus expedita? Maxime
+				nobis atque dolor et accusantium Quis tempore?
+			</p>
+			<span class="text-3xl flex gap-6 items-center">
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-github"></i>
+				<i class="fa-brands fa-youtube"></i>
+			</span>
+		</div>
+		<div class="w-full p-6">
+			<div class="block">
+				<span class="text-xl font-bold">Quick links</span>
+				<ul class="p-3">
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/portfolio">Portfolio</a></li>
+					<li><a href="/Contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="w-full p-6">
+			<div class="block">
+				<span class="text-xl font-bold">Services We Offer</span>
+				<ul class="p-3">
+					<li><a href="">Website Development</a></li>
+					<li><a href="">Software Development</a></li>
+					<li><a href="">Mobile Application development</a></li>
+					<li><a href="">Social Media Management</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 	<span
-		><a href="https://storyset.com/finance"
-			>Finance illustrations by Storyset</a
+		class="flex justify-center items-center h-[60px] bg-black text-sm md:text-xl"
+	>
+		<a href="/">Developed By Appniche Technologies Pvt.Ltd</a>
+		<a
+			href="https://storyset.com/finance"
+			class="absolute right-2 bg-blue-400 text-black add_banner"
+			>Storyset</a
 		></span
 	>
 </footer>
+
+<style>
+	ul {
+		list-style: disc;
+	}
+	ul > li {
+		text-decoration: wavy;
+		text-decoration-line: underline;
+	}
+</style>
