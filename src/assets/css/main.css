@@ -38,12 +38,6 @@ img {
 .info_cnt{
 	width: 300px;
 }
-.add_banner{
-	transform: rotate(-30deg);
-	font-size: 12px;
-	padding: 0px 5px;
-	border-radius: 10px;
-}
 
 /* Keyframes for animation */
 

@@ -13,6 +13,7 @@ import img_1 from "../assets/img/svg_ani.svg";
 import img_2 from "../assets/img/svg_ani3.svg";
 import img_3 from "../assets/img/svg_ani2.svg";
 import img_4 from "../assets/img/svg_ani4.svg";
+import img_5 from "../assets/img/svg_content.svg";
 ---
 
 <Layout title="Appniche techologies">
@@ -40,7 +41,7 @@ import img_4 from "../assets/img/svg_ani4.svg";
 
 		<!-- part one of the main section -->
 
-		<div
+		<section
 			class="flex justify-center gap-4 w-full h-[85dvh] px-2 overflow-hidden"
 		>
 			<div
@@ -60,19 +61,19 @@ import img_4 from "../assets/img/svg_ani4.svg";
 
 				<div class="buttons flex gap-8">
 					<button
-						class="md:w-[150px] w-[120px] bg-blue-500 text-black text-xl md:text-2xl font-semibold p-2 rounded-md vibrate-1"
-						><a href="/contact">Contact us</a></button
+						class="md:w-[150px] w-[120px] bg-[--primary_color] text-black text-xl md:text-2xl font-semibold p-2 rounded-md vibrate-1"
+						><a href="/contact-us">Contact us</a></button
 					>
-					<button
-						class="btn1 md:w-[150px] w-[120px] border-2 border-blue-500 text-xl md:text-2xl p-2 rounded-md hover:font-extrabold"
-						><a href="#what-we-do">more</a></button
-					>
+					<!-- <button -->
+					<!-- 	class="btn1 md:w-[150px] w-[120px] border-2 border-blue-500 text-xl md:text-2xl p-2 rounded-md hover:font-extrabold" -->
+					<!-- 	><a href="#what-we-do">more</a></button -->
+					<!-- > -->
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<!-- part two of the main section -->
-		<div
+		<section
 			class="w-full h-auto text-xl flex flex-col items-center gap-[50px]"
 			id="what-we-do"
 		>
@@ -80,12 +81,14 @@ import img_4 from "../assets/img/svg_ani4.svg";
 			<div
 				class="flex flex-col justify-center items-center gap-8 mt-8 px-4 md:px-0"
 			>
-				<span
-					id="part_two_title"
-					class="text-3xl md:text-4xl font-semibold text-center"
-					>Welcome to Appniche Technologies</span
-				>
-
+				<div>
+					<p class="text-center text-3xl font-bold px-0 md:px-4">
+						<i class="text-[--primary_color]"
+							>We don't just build anything, we forge you're
+							Dream's into Reality here.</i
+						>
+					</p>
+				</div>
 				<div class="flex justify-center items-center gap-4">
 					<hr class="w-[15dvw]" />
 					<span
@@ -95,73 +98,100 @@ import img_4 from "../assets/img/svg_ani4.svg";
 					<hr class="w-[15dvw]" />
 				</div>
 
-				<div>
-					<p class="text-center">
-						<i class="text-blue-500"
-							>We don't just build anything, we forge you're
-							Dream's into Reality here.</i
-						>
-					</p>
-				</div>
-				<div
-					class="w-full h-[60%] flex flex-wrap justify-center items-center gap-14 mt-8"
+				<span
+					id="part_two_title"
+					class="text-3xl md:text-4xl font-semibold text-center"
+					>Welcome to Appniche Technologies</span
 				>
-					<div class="info_cnt">
-						<Image
-							src={img_1}
-							alt="scroll-image"
-							style="width: 300px; height: 300px;"
-						/>
-						<div class="span" id="sp_word">
-							<p>
-								Consectetur commodi soluta sed rem veniam.
-								Facere minima repellat exercitationem illo non.
-								Sit illo consectetur minima laborum tempora
-								Molestiae assumenda?
-							</p>
-						</div>
-					</div>
-					<div class="info_cnt">
-						<Image
-							src={img_2}
-							alt="scroll-image"
-							style="width: 300px; height: 300px;"
-						/>
-						<div class="span" id="sp_word">
-							<p>
-								Elit vero quo quidem vero rem pariatur!
-								Repellendus hic neque incidunt perspiciatis
-								rerum, voluptatem Impedit eum sunt veritatis
-								beatae eos?
-							</p>
-						</div>
-					</div>
-					<div class="info_cnt">
-						<Image
-							src={img_3}
-							alt="scroll-image"
-							style="width: 300px; height: 300px;"
-						/>
-						<div class="span" id="sp_word">
-							<p>
-								Ipsum modi omnis molestias dolor vero molestias!
-								Dignissimos corrupti praesentium cum alias
-								doloribus Sequi ratione officiis recusandae
-								impedit rem id
-							</p>
-						</div>
-					</div>
+			</div>
+			<div class="flex flex-wrap items-center justify-center gap-16">
+				<Image src={img_5} alt="image" class="float-left" />
+				<div class="lg:w-[40dvw] w-[90dvw]">
+					<h3
+						class="text-4xl font-semibold lg:w-[60%] w-[90%] mx-2 p-3 border-b-2 border-blue-500"
+					>
+						About Appniche
+					</h3>
+					<p class="p-3 pt-6">
+						Appniche Technologies is a software development company
+						specializing in creating high-quality and scalable web
+						applications. With a strong team of experts in their
+						field, they have the skills and resources necessary to
+						develop a unique and personalized solution for their
+						clients.
+					</p>
+					<p class="p-3">
+						At Appniche Technologies, they are dedicated to
+						utilizing cutting-edge technologies such as HTMX,
+						Astro.js, and more. By leveraging these powerful tools,
+						they are able to deliver efficient, reliable, and
+						engaging web experiences to their clients.
+					</p>
+					<a
+						class="abt-link inline-block py-4 px-6 m-3 bg-[--primary_color] rounded-[40px]"
+						href="/about-us">Read more</a
+					>
 				</div>
 			</div>
-		</div>
-
-		<!-- <div -->
-		<!-- 	class="w-full h-screen text-xl flex flex-col justify-center items-center" -->
-		<!-- > -->
-		<!-- 	<div class="grid grid-flow-col place-items-center gap-[2rem]"></div> -->
-		<!-- </div> -->
+		</section>
 	</main>
+
+	<!-- <div -->
+	<!-- 	class="w-full h-[60%] flex flex-wrap justify-center items-center gap-14 mt-8" -->
+	<!-- > -->
+	<!-- 	<div class="info_cnt"> -->
+	<!-- 		<Image -->
+	<!-- 			src={img_1} -->
+	<!-- 			alt="scroll-image" -->
+	<!-- 			style="width: 300px; height: 300px;" -->
+	<!-- 		/> -->
+	<!-- 		<div class="span w-[300px] h-[300px]" id="sp_word"> -->
+	<!-- 			<p></p> -->
+	<!-- 		</div> -->
+	<!-- 	</div> -->
+	<!-- 	<div class="info_cnt"> -->
+	<!-- 		<Image -->
+	<!-- 			src={img_2} -->
+	<!-- 			alt="scroll-image" -->
+	<!-- 			style="width: 300px; height: 300px;" -->
+	<!-- 		/> -->
+	<!-- 		<div class="span w-[300px] h-[300px]" id="sp_word"> -->
+	<!-- 			<p> -->
+	<!-- 				Elit vero quo quidem vero rem pariatur! -->
+	<!-- 				Repellendus hic neque incidunt perspiciatis -->
+	<!-- 				rerum, voluptatem Impedit eum sunt veritatis -->
+	<!-- 				beatae eos? -->
+	<!-- 			</p> -->
+	<!-- 		</div> -->
+	<!-- 	</div> -->
+	<!-- 	<div class="info_cnt"> -->
+	<!-- 		<Image -->
+	<!-- 			src={img_3} -->
+	<!-- 			alt="scroll-image" -->
+	<!-- 			style="width: 300px; height: 300px;" -->
+	<!-- 		/> -->
+	<!-- 		<div class="span w-[300px] h-[300px]" id="sp_word"> -->
+	<!-- 			<p> -->
+	<!-- 				Ipsum modi omnis molestias dolor vero molestias! -->
+	<!-- 				Dignissimos corrupti praesentium cum alias -->
+	<!-- 				doloribus Sequi ratione officiis recusandae -->
+	<!-- 				impedit rem id -->
+	<!-- 			</p> -->
+	<!-- 		</div> -->
+	<!-- 	</div> -->
+	<!-- </div> -->
 
 	<!-- footer and some Add's -->
 	<Footer />
 </Layout>
+
+<style>
+	.abt-link {
+		border: 2px solid var(--primary_color);
+		transition: linear 0.2s;
+	}
+	.abt-link:hover {
+		background-color: var(--bg);
+		border: 2px solid var(--primary_color);
+	}
+</style>

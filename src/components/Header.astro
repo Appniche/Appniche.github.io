@@ -5,15 +5,15 @@ import { Image } from "astro:assets";
 import img1 from "../assets/img/img1-bg.png";
 ---
 
-<header class="h-[15dvh] flex justify-between items-center pl-2 px-8">
-	<div class="flex justify-center items-center">
+<header class="header h-[15dvh] flex justify-between items-center pl-2 px-8">
+	<div class="header__logo">
 		<Image class="rounded-full" src={img1} alt="Company logo" width="90" />
-		<span class="text-xl md:text-3xl font-semibold"
+		<span class="header__title text-xl md:text-3xl font-semibold"
 			>Appniche Technologie's</span
 		>
 	</div>
 
-	<div id="btn" class="cursor-pointer px-3 border border-white rounded-md">
+	<div id="btn" class="cursor-pointer px-3 rounded-md">
 		<span class="text-[28px]">
 			<i class="fa-solid fa-bars"></i>
 		</span>
@@ -21,8 +21,14 @@ import img1 from "../assets/img/img1-bg.png";
 
 	<div
 		id="nav_menu"
-		class="hidden text-xl w-[300px] h-[250px] grid place-items-center fixed z-20 right-8 top-[90px] md:top-[70px] rounded-xl"
+		class="nav_menu w-[320px] md:w-[400px] h-[100dvh] grid place-items-center fixed z-20 top-0 right-[-100%]"
 	>
+		<div
+			id="close_btn"
+			class="hidden cursor-pointer text-[30px] absolute z-20 top-6 right-8 px-3"
+		>
+			<i class="fa-solid fa-xmark"></i>
+		</div>
 		<div
 			class="inner_cnt text-xl flex flex-col justify-around items-center font-semibold"
 		>
@@ -36,9 +42,16 @@ import img1 from "../assets/img/img1-bg.png";
 </header>
 
 <style>
-	#nav_menu {
+	.header {
 		background-color: #17181c;
-		border: 2px solid #fff;
+		/* border: 2px solid #fff; */
+	}
+	.header__logo {
+		display: flex;
+		align-items: center;
+	}
+	.header__title {
+		margin-left: 0.5rem;
 	}
 	.inner_cnt {
 		gap: 1.5rem;
@@ -53,5 +66,13 @@ import img1 from "../assets/img/img1-bg.png";
 	.nav_links:hover {
 		color: black;
 		text-decoration: underline;
+	}
+	#nav_menu {
+		background-color: transparent;
+		backdrop-filter: blur(30px);
+		transition: 0.6s ease-in-out;
+	}
+	#nav_menu.open {
+		right: 0;
 	}
 </style>

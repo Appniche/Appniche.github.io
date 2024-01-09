@@ -31,7 +31,7 @@ const { title } = Astro.props;
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
 	</head>
-	<body class="bg-[#17181c] text-white">
+	<body class="bg-[--bg] text-white">
 		<slot />
 		<script src="../assets/js/main.js"></script>
 	</body>
@@ -39,6 +39,12 @@ const { title } = Astro.props;
 
 <style is:global>
 	@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Roboto&display=swap");
+
+	:root {
+		--bg: #17181c;
+		--primary_color: #3b82f6;
+	}
+
 	html {
 		/* font-family: system-ui; */
 		font-family: "Roboto", sans-serif;
